@@ -15,13 +15,12 @@ class TavusManager extends EventEmitter {
             throw new Error("TavusManager.initialize: 'videoElement' is required");
         }
         try {
-            // const personaResponse = await this.createPersona("echo");
-            // if (!personaResponse || !personaResponse.personaId) {
-            //     throw new Error("Failed to create persona");
-            // }
-            // console.log("Persona ID:", personaResponse.personaId);
-            const personaId = "p379c87ee058";
-            const conversationResponse = await this.createConversation(personaId);
+            const personaResponse = await this.createPersona("echo");
+            if (!personaResponse || !personaResponse.personaId) {
+                throw new Error("Failed to create persona");
+            }
+
+            const conversationResponse = await this.createConversation(personaResponse.personaId);
             if (!conversationResponse) {
                 throw new Error("Failed to create conversation");
             }
