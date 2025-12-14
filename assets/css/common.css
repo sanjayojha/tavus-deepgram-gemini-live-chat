@@ -1,0 +1,12 @@
+.aiResponseArea,
+.userArea {
+    min-height: 328px;
+    height: auto;
+    width: auto;
+    width: 390px;
+}
+
+video#aiVideo {
+    max-width: 390px;
+    width: 100%;
+}

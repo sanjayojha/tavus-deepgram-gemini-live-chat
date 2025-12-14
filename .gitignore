@@ -1,0 +1,11 @@
+.ddev
+todo.txt
+details.txt
+.env
+*.zip
+backups
+sse-test.html
+backend/php/stream.php
+assets/js/audio-playback.js
+assets/js/main-alt.js
+assets/js/main-send-text.js
